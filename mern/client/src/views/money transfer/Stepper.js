@@ -111,12 +111,12 @@ export const FormStepper = (props) => {
         break;
       case 1:
         setCompiledForm({ ...compiledForm, two: form });
-        /*if(!(checkReciever(form.selectUser) && checkDetailsLoan(form.amount,header))){
+        if(!(checkReciever(form.selectUser) && checkDetailsLoan(form.amount,header))){
           canContinue=false;
         }
-        else{*/
+        else{
           canContinue=true;
-        //}
+        }
         break;
       case 2:
         setCompiledForm({ ...compiledForm, three: form });
