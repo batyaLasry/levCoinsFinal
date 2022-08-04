@@ -89,6 +89,7 @@ export const FormStepper = (props) => {
       return false;
     }
   }
+  /*
   let socket;
   function connectToSocket(){
   return new Promise(res=>{
