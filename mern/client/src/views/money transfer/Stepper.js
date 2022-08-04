@@ -47,12 +47,12 @@ export const FormStepper = (props) => {
     socket = io("http://localhost:5000", { transports : ['websocket'] });
     res(socket)
   })}
-  connectToSocket().then(socket=>{socket.emit('message_on',"messasrtyuiouytrdyui");  })
+  /*connectToSocket().then(socket=>{socket.emit('message_on',"messasrtyuiouytrdyui");  })
   const send=()=>{
     console.log("55");
     socket.on('message_emit',alert("mess"));
   }
-  send();
+  send();*/
 
   const handleNext = () => {
     let canContinue = true;
@@ -63,12 +63,12 @@ export const FormStepper = (props) => {
         break;
       case 1:
         setCompiledForm({ ...compiledForm, two: form });
-        if(!(checkReciever(form.selectUser) && checkDetailsLoan(form.amount,header))){
+        /*if(!(checkReciever(form.selectUser) && checkDetailsLoan(form.amount,header))){
           canContinue=false;
         }
-        else{
+        else{*/
           canContinue=true;
-        }
+        //}
         break;
       case 2:
         setCompiledForm({ ...compiledForm, three: form });
